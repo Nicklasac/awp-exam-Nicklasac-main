@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [
+    "../../../app/routes/posts.jsx"
+  ],
+  "sourcesContent": [
+    "import { Link, Outlet } from \"@remix-run/react\";\n\nexport default function posts() {\n  let postList = [\"my post 1\", \"my post 2\", \"my post 3\"];\n\n  return (\n    <div>\n      <Link to=\"/\">Home</Link>\n      <h1>Posts</h1>\n      <p>Here is my posts:</p>\n      <ul>\n        <li>\n          <Link to=\"first-post\">First post</Link>\n        </li>\n        <li>\n          <Link to=\"second-post\">Second post</Link>\n        </li>\n      </ul>\n      <Outlet></Outlet>\n    </div>\n  );\n}\n"
+  ],
+  "mappings": ";;;;;;;;;;;;AAAA;AAEe,SAAR,WAA4B;AACjC,MAAI,cAAc,CAAC,gBAAgB,gBAAgB,cAAc;AAEjE,SACE,mDAAC;AAAA,IACC;AAAA,yDAAC;AAAA,QAAK,IAAG;AAAA,QAAI;AAAA,SAAb;AAAA;AAAA;AAAA;AAAA,aAAiB;AAAA,MACjB,mDAAC;AAAA,QAAG;AAAA,SAAJ;AAAA;AAAA;AAAA;AAAA,aAAY;AAAA,MACZ,mDAAC;AAAA,QAAE;AAAA,SAAH;AAAA;AAAA;AAAA;AAAA,aAAoB;AAAA,MACpB,mDAAC;AAAA,QACC;AAAA,6DAAC;AAAA,YACC,6DAAC;AAAA,cAAK,IAAG;AAAA,cAAa;AAAA,eAAtB;AAAA;AAAA;AAAA;AAAA,mBAAgC;AAAA,aADlC;AAAA;AAAA;AAAA;AAAA,iBAEA;AAAA,UACA,mDAAC;AAAA,YACC,6DAAC;AAAA,cAAK,IAAG;AAAA,cAAc;AAAA,eAAvB;AAAA;AAAA;AAAA;AAAA,mBAAkC;AAAA,aADpC;AAAA;AAAA;AAAA;AAAA,iBAEA;AAAA;AAAA,SANF;AAAA;AAAA;AAAA;AAAA,aAOA;AAAA,MACA,mDAAC,YAAD;AAAA;AAAA;AAAA;AAAA,aAAQ;AAAA;AAAA,KAZV;AAAA;AAAA;AAAA;AAAA,SAaA;AAEJ;",
+  "names": []
+}

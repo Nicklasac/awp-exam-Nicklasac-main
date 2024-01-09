@@ -1,0 +1,21 @@
+.login-form input,
+.signup-form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button,
+.signup-form button {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--color-dark-grey);
+  color: white;
+}
+
+.page {
+  padding: 20px;
+}

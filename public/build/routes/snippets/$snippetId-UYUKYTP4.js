@@ -1,0 +1,261 @@
+import {
+  require_connectDb_server
+} from "/build/_shared/chunk-2RREV2JK.js";
+import {
+  Link,
+  useCatch,
+  useLoaderData
+} from "/build/_shared/chunk-BD7VADKQ.js";
+import {
+  require_jsx_dev_runtime
+} from "/build/_shared/chunk-GDSG6XVO.js";
+import {
+  __toESM
+} from "/build/_shared/chunk-CUPSZOF3.js";
+
+// app/routes/snippets/$snippetId.jsx
+var import_connectDb_server = __toESM(require_connectDb_server());
+var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime());
+function SnippetPage() {
+  const snippet = useLoaderData();
+  const dateTime = new Date(snippet.createdAt);
+  const date = dateTime.getDate();
+  const month = dateTime.getMonth() + 1;
+  const timeCreated = dateTime.toLocaleTimeString();
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+    children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+        children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", {
+            className: "text-2xl font-bold",
+            children: "Username"
+          }, void 0, false, {
+            fileName: "app/routes/snippets/$snippetId.jsx",
+            lineNumber: 50,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", {
+              className: "text-2xl font-bold",
+              children: [
+                snippet.title,
+                /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+                  className: "float-right",
+                  children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("form", {
+                    method: "POST",
+                    children: [
+                      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("input", {
+                        type: "hidden",
+                        name: "_method",
+                        value: "favorite"
+                      }, void 0, false, {
+                        fileName: "app/routes/snippets/$snippetId.jsx",
+                        lineNumber: 57,
+                        columnNumber: 17
+                      }, this),
+                      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("button", {
+                        type: "submit",
+                        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("svg", {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          className: "h-6 w-6",
+                          fill: snippet.favorite ? "red" : "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
+                          strokeWidth: 2,
+                          children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", {
+                            strokeLinecap: "round",
+                            strokeLinejoin: "round",
+                            d: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                          }, void 0, false, {
+                            fileName: "app/routes/snippets/$snippetId.jsx",
+                            lineNumber: 67,
+                            columnNumber: 21
+                          }, this)
+                        }, void 0, false, {
+                          fileName: "app/routes/snippets/$snippetId.jsx",
+                          lineNumber: 59,
+                          columnNumber: 19
+                        }, this)
+                      }, void 0, false, {
+                        fileName: "app/routes/snippets/$snippetId.jsx",
+                        lineNumber: 58,
+                        columnNumber: 17
+                      }, this)
+                    ]
+                  }, void 0, true, {
+                    fileName: "app/routes/snippets/$snippetId.jsx",
+                    lineNumber: 56,
+                    columnNumber: 15
+                  }, this)
+                }, void 0, false, {
+                  fileName: "app/routes/snippets/$snippetId.jsx",
+                  lineNumber: 55,
+                  columnNumber: 13
+                }, this)
+              ]
+            }, void 0, true, {
+              fileName: "app/routes/snippets/$snippetId.jsx",
+              lineNumber: 53,
+              columnNumber: 11
+            }, this)
+          }, void 0, false, {
+            fileName: "app/routes/snippets/$snippetId.jsx",
+            lineNumber: 52,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
+            children: [
+              "Added ",
+              `${date}/${month}/${timeCreated}`
+            ]
+          }, void 0, true, {
+            fileName: "app/routes/snippets/$snippetId.jsx",
+            lineNumber: 78,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("pre", {
+            className: "text-blue-600 rounded-2xl bg-gray-800 p-6 mt-4 whitespace-normal",
+            children: snippet.snippet
+          }, void 0, false, {
+            fileName: "app/routes/snippets/$snippetId.jsx",
+            lineNumber: 79,
+            columnNumber: 9
+          }, this)
+        ]
+      }, void 0, true, {
+        fileName: "app/routes/snippets/$snippetId.jsx",
+        lineNumber: 49,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+        className: "flex justify-between items-center mt-6",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("form", {
+            method: "POST",
+            children: [
+              /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("input", {
+                type: "hidden",
+                name: "_method",
+                value: "delete"
+              }, void 0, false, {
+                fileName: "app/routes/snippets/$snippetId.jsx",
+                lineNumber: 90,
+                columnNumber: 11
+              }, this),
+              /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("button", {
+                className: "shadow-lg bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded",
+                children: "Delete snippet"
+              }, void 0, false, {
+                fileName: "app/routes/snippets/$snippetId.jsx",
+                lineNumber: 91,
+                columnNumber: 11
+              }, this)
+            ]
+          }, void 0, true, {
+            fileName: "app/routes/snippets/$snippetId.jsx",
+            lineNumber: 89,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+            className: "float-right",
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("form", {
+              method: "POST",
+              children: [
+                /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("input", {
+                  type: "hidden",
+                  name: "_method",
+                  value: "update"
+                }, void 0, false, {
+                  fileName: "app/routes/snippets/$snippetId.jsx",
+                  lineNumber: 98,
+                  columnNumber: 13
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Link, {
+                  className: "hover:underline",
+                  to: `snippets/update/${snippet._id}`,
+                  children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("button", {
+                    className: "shadow-lg bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded",
+                    children: "Update snippet"
+                  }, void 0, false, {
+                    fileName: "app/routes/snippets/$snippetId.jsx",
+                    lineNumber: 103,
+                    columnNumber: 15
+                  }, this)
+                }, void 0, false, {
+                  fileName: "app/routes/snippets/$snippetId.jsx",
+                  lineNumber: 99,
+                  columnNumber: 13
+                }, this)
+              ]
+            }, void 0, true, {
+              fileName: "app/routes/snippets/$snippetId.jsx",
+              lineNumber: 97,
+              columnNumber: 11
+            }, this)
+          }, void 0, false, {
+            fileName: "app/routes/snippets/$snippetId.jsx",
+            lineNumber: 96,
+            columnNumber: 9
+          }, this)
+        ]
+      }, void 0, true, {
+        fileName: "app/routes/snippets/$snippetId.jsx",
+        lineNumber: 88,
+        columnNumber: 7
+      }, this)
+    ]
+  }, void 0, true, {
+    fileName: "app/routes/snippets/$snippetId.jsx",
+    lineNumber: 48,
+    columnNumber: 5
+  }, this);
+}
+function CatchBoundary() {
+  const caught = useCatch();
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+    children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", {
+        children: [
+          caught.status,
+          " ",
+          caught.statusText
+        ]
+      }, void 0, true, {
+        fileName: "app/routes/snippets/$snippetId.jsx",
+        lineNumber: 118,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
+        children: caught.data
+      }, void 0, false, {
+        fileName: "app/routes/snippets/$snippetId.jsx",
+        lineNumber: 121,
+        columnNumber: 7
+      }, this)
+    ]
+  }, void 0, true, {
+    fileName: "app/routes/snippets/$snippetId.jsx",
+    lineNumber: 117,
+    columnNumber: 5
+  }, this);
+}
+function ErrorBoundary({ error }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", {
+    className: "text-red-500 font-bold",
+    children: [
+      error.name,
+      ": ",
+      error.message
+    ]
+  }, void 0, true, {
+    fileName: "app/routes/snippets/$snippetId.jsx",
+    lineNumber: 128,
+    columnNumber: 5
+  }, this);
+}
+export {
+  CatchBoundary,
+  ErrorBoundary,
+  SnippetPage as default
+};
+//# sourceMappingURL=/build/routes/snippets/$snippetId-UYUKYTP4.js.map

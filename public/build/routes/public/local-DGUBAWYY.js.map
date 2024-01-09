@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/public/local.jsx"],
+  "sourcesContent": ["import { useLoaderData } from \"@remix-run/react\";\nimport PostCard from \"~/components/PostCard\";\nimport connectDb from \"~/db/connectDb.server\";\n\nexport async function loader() {\n  const db = await connectDb();\n  const data = await db.models.Post.find().sort({ createdAt: -1 });\n  const postWithUsers = await Promise.all(\n    data.map(async (post) => {\n      const user = await db.models.User.findById(post.userId);\n      return { ...post.toObject(), user };\n    })\n  );\n  return { data: postWithUsers };\n}\n\nexport default function Index() {\n  const loaderData = useLoaderData();\n  console.log(loaderData);\n  return (\n    <div className=\"grid p-2 pt-20\">\n      {loaderData?.data?.map((post) => (\n        <PostCard key={post._id} post={post} user={loaderData.data.user} />\n      ))}\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAEA,uBAAsB;AAFtB;AAgBe,SAAR,QAAyB;AAhBhC;AAiBE,QAAM,aAAa,cAAc;AACjC,UAAQ,IAAI,UAAU;AACtB,SACE,mDAAC;AAAA,IAAI,WAAU;AAAA,IACZ,yDAAY,SAAZ,mBAAkB,IAAI,CAAC,SACtB,mDAAC;AAAA,MAAwB;AAAA,MAAY,MAAM,WAAW,KAAK;AAAA,OAA5C,KAAK,KAApB;AAAA;AAAA;AAAA;AAAA,WAAiE;AAAA,KAFrE;AAAA;AAAA;AAAA;AAAA,SAIA;AAEJ;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/login.jsx"],
+  "sourcesContent": ["import { json, redirect } from \"@remix-run/node\";\nimport { useLoaderData } from \"@remix-run/react\";\n\nexport async function loader({ request }) {\n  const cookieHeader = request.headers.get(\"Cookie\");\n  return json({ cookie: cookieHeader });\n}\n\nexport default function Login() {\n  const data = useLoaderData();\n  return (\n    <div>\n      <h1>Login</h1>\n      <pre>{JSON.stringify(data, null, 2)}</pre>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;;AAAA;AAQe,SAAR,QAAyB;AAC9B,QAAM,OAAO,cAAc;AAC3B,SACE,mDAAC;AAAA,IACC;AAAA,yDAAC;AAAA,QAAG;AAAA,SAAJ;AAAA;AAAA;AAAA;AAAA,aAAS;AAAA,MACT,mDAAC;AAAA,QAAK,eAAK,UAAU,MAAM,MAAM,CAAC;AAAA,SAAlC;AAAA;AAAA;AAAA;AAAA,aAAoC;AAAA;AAAA,KAFtC;AAAA;AAAA;AAAA;AAAA,SAGA;AAEJ;",
+  "names": []
+}

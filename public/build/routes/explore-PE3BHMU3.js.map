@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [
+    "../../../app/routes/explore.jsx"
+  ],
+  "sourcesContent": [
+    "import {\n  useLoaderData,\n  Link,\n  useSubmit,\n  Form,\n  Outlet,\n  useLocation,\n} from \"@remix-run/react\";\nimport connectDb from \"~/db/connectDb.server.js\";\n//import { requireUserSession } from \"~/sessions.server\";\n\nexport async function loader({ request }) {\n  const db = await connectDb();\n  //const session = await requireUserSession(request);\n  const url = new URL(request.url);\n  const searchQuery = url.searchParams.get(\"q\");\n  const sortQuery = url.searchParams.get(\"s\");\n  const posts = await db.models.Post.find(\n    searchQuery\n      ? {\n          title: { $regex: new RegExp(searchQuery, \"i\") },\n        }\n      : {}\n  ).sort(\n    sortQuery\n      ? { [sortQuery]: -1, title: 1 }\n      : {\n          title: 1,\n        }\n  );\n  //if (session.has(\"userId\")) {\n  return posts;\n  // }\n}\n\nexport default function Index() {\n  const posts = useLoaderData();\n  const submit = useSubmit();\n  const location = useLocation();\n\n  return (\n    <ul className=\"\">\n      {posts.map((post) => {\n        return (\n          <li key={post._id} className=\"mb-4\">\n            <Link to={`/posts/${post._id}`}>{post}</Link>\n          </li>\n        );\n      })}\n    </ul>\n  );\n}\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;AAQA,8BAAsB;AARtB;AAmCe,SAAR,QAAyB;AAC9B,QAAM,WAAW,cAAc;AAC/B,QAAM,SAAS,UAAU;AACzB,QAAM,WAAW,YAAY;AAE7B,SACE,mDAAC;AAAA,IAAG,WAAU;AAAA,IACX,mBAAS,IAAI,CAAC,YAAY;AACzB,aACE,mDAAC;AAAA,QAAqB,WAAU;AAAA,QAC9B,6DAAC;AAAA,UAAK,IAAI,aAAa,QAAQ;AAAA,UAAQ;AAAA,WAAvC;AAAA;AAAA;AAAA;AAAA,eAA+C;AAAA,SADxC,QAAQ,KAAjB;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,IAEJ,CAAC;AAAA,KAPH;AAAA;AAAA;AAAA;AAAA,SAQA;AAEJ;",
+  "names": []
+}

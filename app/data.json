@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "title": "This is my first snippet",
+    "language": "php"
+  },
+  {
+    "id": "2",
+    "title": "This is my second snippet",
+    "language": "JS"
+  },
+  {
+    "id": "3",
+    "title": "This is my third snippet",
+    "language": "HTML"
+  },
+  {
+    "id": "4",
+    "title": "This is my fourth snippet",
+    "language": "CSS"
+  }
+]

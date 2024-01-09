@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/public/local.jsx"],
+  "sourcesContent": ["import { useLoaderData } from \"@remix-run/react\";\nimport PostCard from \"~/components/PostCard\";\nimport connectDb from \"~/db/connectDb.server\";\n\nexport async function loader() {\n  const db = await connectDb();\n  const data = await db.models.Post.find();\n  return { data };\n}\n\nexport default function Index() {\n  const loaderData = useLoaderData();\n  return (\n    <div className=\"grid p-2\">\n      {loaderData?.data?.map((post) => (\n        <PostCard key={post._id} post={post} />\n      ))}\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAEA,uBAAsB;AAFtB;AAUe,SAAR,QAAyB;AAVhC;AAWE,QAAM,aAAa,cAAc;AACjC,SACE,mDAAC;AAAA,IAAI,WAAU;AAAA,IACZ,yDAAY,SAAZ,mBAAkB,IAAI,CAAC,SACtB,mDAAC;AAAA,MAAwB;AAAA,OAAV,KAAK,KAApB;AAAA;AAAA;AAAA;AAAA,WAAqC;AAAA,KAFzC;AAAA;AAAA;AAAA;AAAA,SAIA;AAEJ;",
+  "names": []
+}

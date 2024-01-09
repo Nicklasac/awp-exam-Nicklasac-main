@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [
+    "../../app/root.jsx"
+  ],
+  "sourcesContent": [
+    "import {\n  Links,\n  Link,\n  LiveReload,\n  Meta,\n  Outlet,\n  Scripts,\n  ScrollRestoration,\n} from \"@remix-run/react\";\nimport styles from \"~/tailwind.css\";\n\nexport const links = () => [\n  {\n    rel: \"stylesheet\",\n    href: styles,\n  },\n];\n\nexport function meta() {\n  return {\n    charset: \"utf-8\",\n    title: \"awp-exam\",\n    viewport: \"width=device-width,initial-scale=1\",\n  };\n}\n\nexport default function App() {\n  return (\n    <html lang=\"en\">\n      <head>\n        <Meta />\n        <Links />\n      </head>\n      <body className=\" text-slate-800 font-sans p-4\">\n        <header className=\"pb-3 mb-4\">\n          <Link\n            to=\"/\"\n            className=\"hover:underline focus:font-bold text-blue-600\"\n          >\n            Explore |\n          </Link>\n\n          <Link\n            to=\"/posts/new\"\n            className=\"ml-3 hover:underline focus:font-bold text-blue-600\"\n          >\n            Create Post\n          </Link>\n        </header>\n        <Outlet />\n        <ScrollRestoration />\n        <Scripts />\n        <LiveReload />\n      </body>\n    </html>\n  );\n}\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAWO,IAAM,QAAQ,MAAM;AAAA,EACzB;AAAA,IACE,KAAK;AAAA,IACL,MAAM;AAAA,EACR;AACF;AAEO,SAAS,OAAO;AACrB,SAAO;AAAA,IACL,SAAS;AAAA,IACT,OAAO;AAAA,IACP,UAAU;AAAA,EACZ;AACF;AAEe,SAAR,MAAuB;AAC5B,SACE,mDAAC;AAAA,IAAK,MAAK;AAAA,IACT;AAAA,yDAAC;AAAA,QACC;AAAA,6DAAC,UAAD;AAAA;AAAA;AAAA;AAAA,iBAAM;AAAA,UACN,mDAAC,WAAD;AAAA;AAAA;AAAA;AAAA,iBAAO;AAAA;AAAA,SAFT;AAAA;AAAA;AAAA;AAAA,aAGA;AAAA,MACA,mDAAC;AAAA,QAAK,WAAU;AAAA,QACd;AAAA,6DAAC;AAAA,YAAO,WAAU;AAAA,YAChB;AAAA,iEAAC;AAAA,gBACC,IAAG;AAAA,gBACH,WAAU;AAAA,gBACX;AAAA,iBAHD;AAAA;AAAA;AAAA;AAAA,qBAKA;AAAA,cAEA,mDAAC;AAAA,gBACC,IAAG;AAAA,gBACH,WAAU;AAAA,gBACX;AAAA,iBAHD;AAAA;AAAA;AAAA;AAAA,qBAKA;AAAA;AAAA,aAbF;AAAA;AAAA;AAAA;AAAA,iBAcA;AAAA,UACA,mDAAC,YAAD;AAAA;AAAA;AAAA;AAAA,iBAAQ;AAAA,UACR,mDAAC,uBAAD;AAAA;AAAA;AAAA;AAAA,iBAAmB;AAAA,UACnB,mDAAC,aAAD;AAAA;AAAA;AAAA;AAAA,iBAAS;AAAA,UACT,mDAAC,gBAAD;AAAA;AAAA;AAAA;AAAA,iBAAY;AAAA;AAAA,SAnBd;AAAA;AAAA;AAAA;AAAA,aAoBA;AAAA;AAAA,KAzBF;AAAA;AAAA;AAAA;AAAA,SA0BA;AAEJ;",
+  "names": []
+}

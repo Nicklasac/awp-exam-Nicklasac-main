@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/components/PostCard.jsx"],
+  "sourcesContent": ["import { Link } from \"@remix-run/react\";\n\nexport default function PostCard({ post }) {\n  return (\n    <Link to={`/${post._id}`}>\n      <div className=\"\">\n        <div className=\"\">\n          <h2 className=\"\">{post.title}</h2>\n          <img src={post.image} alt={post.title} className=\"w-20\" />\n          <p>{post.description}</p>\n          <div className=\"\">\n            <div className=\"text-bold\">\n              <p>{post.price} kr.</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </Link>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;;AAAA;AAEe,SAAR,SAA0B,EAAE,KAAK,GAAG;AACzC,SACE,mDAAC;AAAA,IAAK,IAAI,IAAI,KAAK;AAAA,IACjB,6DAAC;AAAA,MAAI,WAAU;AAAA,MACb,6DAAC;AAAA,QAAI,WAAU;AAAA,QACb;AAAA,6DAAC;AAAA,YAAG,WAAU;AAAA,YAAI,eAAK;AAAA,aAAvB;AAAA;AAAA;AAAA;AAAA,iBAA6B;AAAA,UAC7B,mDAAC;AAAA,YAAI,KAAK,KAAK;AAAA,YAAO,KAAK,KAAK;AAAA,YAAO,WAAU;AAAA,aAAjD;AAAA;AAAA;AAAA;AAAA,iBAAwD;AAAA,UACxD,mDAAC;AAAA,YAAG,eAAK;AAAA,aAAT;AAAA;AAAA;AAAA;AAAA,iBAAqB;AAAA,UACrB,mDAAC;AAAA,YAAI,WAAU;AAAA,YACb,6DAAC;AAAA,cAAI,WAAU;AAAA,cACb,6DAAC;AAAA,gBAAG;AAAA,uBAAK;AAAA,kBAAM;AAAA;AAAA,iBAAf;AAAA;AAAA;AAAA;AAAA,qBAAmB;AAAA,eADrB;AAAA;AAAA;AAAA;AAAA,mBAEA;AAAA,aAHF;AAAA;AAAA;AAAA;AAAA,iBAIA;AAAA;AAAA,SARF;AAAA;AAAA;AAAA;AAAA,aASA;AAAA,OAVF;AAAA;AAAA;AAAA;AAAA,WAWA;AAAA,KAZF;AAAA;AAAA;AAAA;AAAA,SAaA;AAEJ;",
+  "names": []
+}

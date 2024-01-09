@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/signup.jsx"],
+  "sourcesContent": ["export default function singup() {\n  return <h1>signup side</h1>;\n}\n"],
+  "mappings": ";;;;;;;;AAAA;AAAe,SAAR,SAA0B;AAC/B,SAAO,mDAAC;AAAA,IAAG;AAAA,KAAJ;AAAA;AAAA;AAAA;AAAA,SAAe;AACxB;",
+  "names": []
+}

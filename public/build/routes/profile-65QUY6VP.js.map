@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/profile.jsx"],
+  "sourcesContent": ["export default function profile() {\n  return <h1>PROFILE PAGE</h1>;\n}\n"],
+  "mappings": ";;;;;;;;AAAA;AAAe,SAAR,UAA2B;AAChC,SAAO,mDAAC;AAAA,IAAG;AAAA,KAAJ;AAAA;AAAA;AAAA;AAAA,SAAgB;AACzB;",
+  "names": []
+}

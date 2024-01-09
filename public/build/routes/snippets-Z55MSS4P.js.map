@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [
+    "../../../app/routes/posts.jsx"
+  ],
+  "sourcesContent": [
+    "import { Link, Outlet } from \"@remix-run/react\";\n\nexport default function posts() {\n  let postList = [\"my post 1\", \"my post 2\", \"my post 3\"];\n\n  return (\n    <div>\n      <Link to=\"/\">Home</Link>\n      <h1>Posts</h1>\n      <p>Here is my posts:</p>\n      <ul>\n        <li></li>\n      </ul>\n      <Outlet></Outlet>\n    </div>\n  );\n}\n"
+  ],
+  "mappings": ";;;;;;;;;;;;AAAA;AAEe,SAAR,WAA4B;AACjC,MAAI,cAAc,CAAC,gBAAgB,gBAAgB,cAAc;AAEjE,SACE,mDAAC;AAAA,IACC;AAAA,yDAAC;AAAA,QAAK,IAAG;AAAA,QAAI;AAAA,SAAb;AAAA;AAAA;AAAA;AAAA,aAAiB;AAAA,MACjB,mDAAC;AAAA,QAAG;AAAA,SAAJ;AAAA;AAAA;AAAA;AAAA,aAAY;AAAA,MACZ,mDAAC;AAAA,QAAE;AAAA,SAAH;AAAA;AAAA;AAAA;AAAA,aAAoB;AAAA,MACpB,mDAAC;AAAA,QACC,6DAAC,UAAD;AAAA;AAAA;AAAA;AAAA,eAAI;AAAA,SADN;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,MACA,mDAAC,YAAD;AAAA;AAAA;AAAA;AAAA,aAAQ;AAAA;AAAA,KAPV;AAAA;AAAA;AAAA;AAAA,SAQA;AAEJ;",
+  "names": []
+}

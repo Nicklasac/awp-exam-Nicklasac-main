@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [
+    "../../../../app/routes/posts/postId.jsx"
+  ],
+  "sourcesContent": [
+    "export default function postId() {\n  return <h1>postid side</h1>;\n}\n"
+  ],
+  "mappings": ";;;;;;;;AAAA;AAAe,SAAR,YAA6B;AAClC,SAAO,mDAAC;AAAA,IAAG;AAAA,KAAJ;AAAA;AAAA;AAAA;AAAA,SAAkB;AAC3B;",
+  "names": []
+}

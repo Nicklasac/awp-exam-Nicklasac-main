@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/public/local.jsx"],
+  "sourcesContent": ["export default function About() {\n  return (\n    <div className=\"page heading\">\n      <h1 style={{ marginBottom: \"2rem\" }} className=\"text-center\">\n        \u2744\uFE0FAbout\u2744\uFE0F\n      </h1>\n      <p className=\"text-center\">\n        Winter store is the best place to buy all your winter drip. <br />\n        Trusted by skiers since yesterday.\n      </p>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;AAAA;AAAe,SAAR,QAAyB;AAC9B,SACE,mDAAC;AAAA,IAAI,WAAU;AAAA,IACb;AAAA,yDAAC;AAAA,QAAG,OAAO,EAAE,cAAc,OAAO;AAAA,QAAG,WAAU;AAAA,QAAc;AAAA,SAA7D;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,MACA,mDAAC;AAAA,QAAE,WAAU;AAAA,QAAc;AAAA;AAAA,UACmC,mDAAC,UAAD;AAAA;AAAA;AAAA;AAAA,iBAAI;AAAA,UAAE;AAAA;AAAA,SADpE;AAAA;AAAA;AAAA;AAAA,aAGA;AAAA;AAAA,KAPF;AAAA;AAAA;AAAA;AAAA,SAQA;AAEJ;",
+  "names": []
+}

@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [
+    "../../../app/routes/index.jsx"
+  ],
+  "sourcesContent": [
+    "import { Link } from \"@remix-run/react\";\n\nexport default function Index() {\n  return (\n    <div style={{ fontFamily: \"system-ui, sans-serif\", lineHeight: \"1.4\" }}>\n      <h1>Welcome to Remix</h1>\n      <ul>\n        <li>\n          <Link to=\"/about\">About me</Link>\n          <br />\n          <Link to=\"/Posts\">My posts</Link>\n        </li>\n        <li></li>\n        <li></li>\n      </ul>\n    </div>\n  );\n}\n"
+  ],
+  "mappings": ";;;;;;;;;;;AAAA;AAEe,SAAR,QAAyB;AAC9B,SACE,mDAAC;AAAA,IAAI,OAAO,EAAE,YAAY,yBAAyB,YAAY,MAAM;AAAA,IACnE;AAAA,yDAAC;AAAA,QAAG;AAAA,SAAJ;AAAA;AAAA;AAAA;AAAA,aAAoB;AAAA,MACpB,mDAAC;AAAA,QACC;AAAA,6DAAC;AAAA,YACC;AAAA,iEAAC;AAAA,gBAAK,IAAG;AAAA,gBAAS;AAAA,iBAAlB;AAAA;AAAA;AAAA;AAAA,qBAA0B;AAAA,cAC1B,mDAAC,UAAD;AAAA;AAAA;AAAA;AAAA,qBAAI;AAAA,cACJ,mDAAC;AAAA,gBAAK,IAAG;AAAA,gBAAY;AAAA,iBAArB;AAAA;AAAA;AAAA;AAAA,qBAAgC;AAAA;AAAA,aAHlC;AAAA;AAAA;AAAA;AAAA,iBAIA;AAAA,UACA,mDAAC,UAAD;AAAA;AAAA;AAAA;AAAA,iBAAI;AAAA,UACJ,mDAAC,UAAD;AAAA;AAAA;AAAA;AAAA,iBAAI;AAAA;AAAA,SAPN;AAAA;AAAA;AAAA;AAAA,aAQA;AAAA;AAAA,KAVF;AAAA;AAAA;AAAA;AAAA,SAWA;AAEJ;",
+  "names": []
+}

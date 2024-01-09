@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/index.jsx"],
+  "sourcesContent": ["import { redirect } from \"@remix-run/node\";\n\nexport async function loader() {\n  return redirect(\"/signup\");\n}\nexport default function Index() {\n  <></>;\n}\n"],
+  "mappings": ";;;;;;;;AAAA;AAKe,SAAR,QAAyB;AAC9B;AAAA;AAAA;AAAA;AAAA,SAAE;AACJ;",
+  "names": []
+}

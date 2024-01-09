@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/about.jsx"],
+  "sourcesContent": ["export default function Index() {}\n"],
+  "mappings": ";;;AAAe,SAAR,QAAyB;AAAC;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/about.jsx"],
+  "sourcesContent": ["export default function about() {\n  return <h1>HELLO</h1>;\n}\n"],
+  "mappings": ";;;;;;AAAA;AAAe,SAAR,QAAyB;AAC9B,SAAO,mDAAC;AAAA,IAAG;AAAA,KAAJ;AAAA;AAAA;AAAA;AAAA,SAAS;AAClB;",
+  "names": []
+}

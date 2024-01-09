@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [
+    "../../../../app/routes/posts/$postId.edit.jsx"
+  ],
+  "sourcesContent": [
+    "import { Link, useParams } from \"@remix-run/react\";\n\nexport default function PostEdit() {\n  const params = useParams();\n  return (\n    <div>\n      <h1>Editing a Post: {params.postId}</h1>\n      <Link to={`../$params.postId}`}>Cancel</Link>\n    </div>\n  );\n}\n"
+  ],
+  "mappings": ";;;;;;;;;;;;AAAA;AAEe,SAAR,cAA+B;AACpC,QAAM,SAAS,UAAU;AACzB,SACE,mDAAC;AAAA,IACC;AAAA,yDAAC;AAAA,QAAG;AAAA;AAAA,UAAoB,OAAO;AAAA;AAAA,SAA/B;AAAA;AAAA;AAAA;AAAA,aAAyC;AAAA,MACzC,mDAAC;AAAA,QAAK,IAAI;AAAA,QAAyB;AAAA,SAAnC;AAAA;AAAA;AAAA;AAAA,aAAyC;AAAA;AAAA,KAF3C;AAAA;AAAA;AAAA;AAAA,SAGA;AAEJ;",
+  "names": []
+}

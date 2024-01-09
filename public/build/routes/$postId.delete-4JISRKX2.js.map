@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/$postId.delete.jsx"],
+  "sourcesContent": ["import { redirect } from \"@remix-run/node\";\nimport connectDb from \"~/db/connectDb.server\";\nimport { getSession } from \"~/sessions\";\n\nexport async function action({ params, request }) {\n  const db = await connectDb();\n  // Check if user is admin.\n  const session = await getSession(request.headers.get(\"Cookie\"));\n  const userId = session.get(\"userId\");\n  if (userId) {\n    const user = await db.models.User.findById(userId);\n    if (user.isAdmin) {\n      await db.models.Post.findByIdAndDelete(params.postId);\n    }\n  }\n  // Redirect to home page.\n  return redirect(\"/\");\n}\n\n// Catch any unexpected errors and display them to the user.\nexport function ErrorBoundary({ error }) {\n  return (\n    <div className=\"text-red-500 text-center\">\n      <h1 className=\"text-2xl font-bold\">Error</h1>\n      <p>{error.message}</p>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;;AACA,uBAAsB;AADtB;AAoBO,SAAS,cAAc,EAAE,MAAM,GAAG;AACvC,SACE,mDAAC;AAAA,IAAI,WAAU;AAAA,IACb;AAAA,yDAAC;AAAA,QAAG,WAAU;AAAA,QAAqB;AAAA,SAAnC;AAAA;AAAA;AAAA;AAAA,aAAwC;AAAA,MACxC,mDAAC;AAAA,QAAG,gBAAM;AAAA,SAAV;AAAA;AAAA;AAAA;AAAA,aAAkB;AAAA;AAAA,KAFpB;AAAA;AAAA;AAAA;AAAA,SAGA;AAEJ;",
+  "names": []
+}
